@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Official Election Results | Trinbarjam Elections Commission</title>
+<style>
+:root{--navy:#12304a;--blue:#1d5b82;--gold:#e8b84a;--pale:#f2f6f9;--ink:#243746;--muted:#607383}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--pale);line-height:1.6}
+header{background:var(--navy);color:white;padding:28px 18px}
+.header-inner,main,footer{max-width:1050px;margin:auto}
+.brand{display:flex;align-items:center;gap:16px}
+.logo{width:76px;height:76px;flex:none}
+.brand h1{font-size:clamp(1.2rem,3vw,1.8rem);line-height:1.2;margin:0}
+.brand p{margin:5px 0 0;color:#dce8ef;font-size:.9rem;letter-spacing:.04em}
+nav{margin-top:20px;display:flex;gap:20px;flex-wrap:wrap}
+nav a,footer a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+main{padding:30px 18px 45px}
+.intro{background:white;border-left:5px solid var(--gold);padding:22px 24px;border-radius:10px;box-shadow:0 3px 14px #102b4010}
+.intro h2{color:var(--navy);margin:0 0 8px;font-size:1.65rem}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;margin:22px 0}
+.kpi{background:white;border-radius:10px;padding:18px;box-shadow:0 3px 14px #102b4010}
+.kpi span{display:block;color:var(--muted);font-size:.9rem}
+.kpi strong{display:block;color:var(--navy);font-size:1.7rem;margin-top:4px}
+section{background:white;margin-top:20px;padding:22px;border-radius:10px;box-shadow:0 3px 14px #102b4010}
+h2.section-title{margin:0 0 14px;color:var(--navy);font-size:1.35rem}
+table{width:100%;border-collapse:collapse}
+th,td{text-align:left;padding:12px 14px;border-bottom:1px solid #e2e9ee}
+th{background:var(--navy);color:white}
+tbody tr:nth-child(even){background:#f6f9fb}
+.num{text-align:right;font-variant-numeric:tabular-nums}
+.bar-row{display:grid;grid-template-columns:62px 1fr 90px;gap:12px;align-items:center;margin:13px 0}
+.track{height:13px;background:#e8eef2;border-radius:99px;overflow:hidden}
+.fill{display:block;height:100%;background:var(--blue);border-radius:99px}
+.party-note{color:var(--muted);font-size:.9rem;margin-top:12px}
+.links{display:flex;flex-wrap:wrap;gap:18px;margin-top:14px}
+.links a{color:var(--blue);font-weight:bold}
+footer{background:var(--navy);color:#e5edf2;padding:22px 18px;max-width:none}
+footer .footer-inner{max-width:1050px;margin:auto}
+footer p{margin:4px 0}
+@media(max-width:520px){th,td{padding:10px 8px;font-size:.9rem}.bar-row{grid-template-columns:48px 1fr 72px;gap:8px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <div class="brand">
+      <svg class="logo" viewBox="0 0 100 100" role="img" aria-label="Trinbarjam Elections Commission logo">
+        <circle cx="50" cy="50" r="47" fill="#fff" stroke="#e8b84a" stroke-width="4"/>
+        <path d="M20 34h60v8H20z" fill="#1d5b82"/>
+        <path d="M25 46h50v7H25z" fill="#e8b84a"/>
+        <path d="M30 58h40v7H30z" fill="#1d5b82"/>
+        <path d="M50 17l8 10H42z" fill="#12304a"/>
+        <path d="M42 69h16v10H42z" fill="#12304a"/>
+        <path d="M34 80h32" stroke="#12304a" stroke-width="4" stroke-linecap="round"/>
+      </svg>
+      <div>
+        <h1>Trinbarjam Elections Commission</h1>
+        <p>OFFICIAL ELECTIONS OFFICE • PUBLIC INFORMATION</p>
+      </div>
+    </div>
+    <nav aria-label="Main navigation">
+      <a href="#party-results">Party Results</a>
+      <a href="#constituency-results">Constituency Results</a>
+      <a href="#past-results">More Information</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="intro">
+    <h2>Official Election Results</h2>
+    <p>Welcome to the public results page for the Trinbarjam National Elections. This page presents the votes received by each political party and the votes cast in each constituency.</p>
+    <p><strong>Election date:</strong> 11 November 2026</p>
+  </div>
+
+  <div class="kpis" aria-label="Election summary">
+    <div class="kpi"><span>Total votes received</span><strong>50,091</strong></div>
+    <div class="kpi"><span>Political parties</span><strong>4</strong></div>
+    <div class="kpi"><span>Constituencies</span><strong>7</strong></div>
+  </div>
+
+  <section id="party-results">
+    <h2 class="section-title">Votes Received by Political Party</h2>
+    <table>
+      <thead><tr><th>Party</th><th>Full party name</th><th class="num">Total votes</th></tr></thead>
+      <tbody>
+        <tr><td><strong>DAP</strong></td><td>Democratic Action Party</td><td class="num">7,514</td></tr>
+        <tr><td><strong>WNA</strong></td><td>Workers National Alliance</td><td class="num">10,018</td></tr>
+        <tr><td><strong>UPM</strong></td><td>United Progressive Movement</td><td class="num">15,027</td></tr>
+        <tr><td><strong>PDR</strong></td><td>People’s Democratic Revolution</td><td class="num">17,532</td></tr>
+        <tr><th colspan="2">Total votes received</th><th class="num">50,091</th></tr>
+      </tbody>
+    </table>
+    <div class="party-note">The bars below compare each party’s votes. Longer bars represent more votes.</div>
+    <div class="bar-row"><strong>DAP</strong><div class="track"><div class="fill" style="width:42.85%"></div></div><span class="num">7,514</span></div>
+    <div class="bar-row"><strong>WNA</strong><div class="track"><div class="fill" style="width:57.15%"></div></div><span class="num">10,018</span></div>
+    <div class="bar-row"><strong>UPM</strong><div class="track"><div class="fill" style="width:85.71%"></div></div><span class="num">15,027</span></div>
+    <div class="bar-row"><strong>PDR</strong><div class="track"><div class="fill" style="width:100%"></div></div><span class="num">17,532</span></div>
+  </section>
+
+  <section id="constituency-results">
+    <h2 class="section-title">Votes Cast in Each Constituency</h2>
+    <p>The table below shows the total number of votes cast in each of the seven constituencies.</p>
+    <table>
+      <thead><tr><th>Constituency</th><th class="num">Votes cast</th></tr></thead>
+      <tbody>
+        <tr><td>North</td><td class="num">4,687</td></tr>
+        <tr><td>South</td><td class="num">6,885</td></tr>
+        <tr><td>East</td><td class="num">9,716</td></tr>
+        <tr><td>West</td><td class="num">7,360</td></tr>
+        <tr><td>North West</td><td class="num">5,550</td></tr>
+        <tr><td>South West</td><td class="num">8,800</td></tr>
+        <tr><td>East Central</td><td class="num">7,093</td></tr>
+        <tr><th>Total</th><th class="num">50,091</th></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="past-results">
+    <h2 class="section-title">More Information</h2>
+    <p>Members of the public can use the links below to find more information about the election.</p>
+    <div class="links">
+      <a href="#party-results">Return to party results</a>
+      <a href="#constituency-results">View constituency results</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <p><strong>Trinbarjam Elections Commission</strong></p>
+    <p>Official Elections Office • Public Information</p>
+    <p>Providing clear and accessible election information to the people of Trinbarjam.</p>
+  </div>
+</footer>
+</body>
+</html>
